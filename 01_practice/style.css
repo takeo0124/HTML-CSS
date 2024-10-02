@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+body {
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN",
+    "Yu Mincho", "MS PMincho", serif;
+  letter-spacing: 0.05em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.inner {
+  max-width: 960px;
+  width: 86.5%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* header */
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+/* main */
+
+.about {
+  background: none;
+  margin-bottom: 100px;
+}
+
+.about .inner {
+  background: url(./images/bg_main.png) no-repeat center center / cover;
+  padding-top: 240px;
+  padding-bottom: 80px;
+}
+
+.about dl {
+  width: 343px;
+  padding: 40px;
+  background-color: #ffffff;
+  margin-left: 0;
+}
+
+.about dt {
+  font-size: 18px;
+}
+
+.about dd {
+  font-size: 36px;
+}
+
+h2 {
+  margin-bottom: 50px;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  color: #ffffff;
+  background-color: #1e1e1e;
+}
+
+@media (min-width: 640px) {
+  /* main */
+  .about {
+    background: url(./images/bg_main.png) no-repeat center center / cover;
+    padding-top: 240px;
+    padding-bottom: 80px;
+  }
+
+  .about .inner {
+    background: none;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content article {
+    width: 450px;
+  }
+}
